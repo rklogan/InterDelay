@@ -159,11 +159,6 @@ void InterDelayAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
 }
 
 //==============================================================================
-bool InterDelayAudioProcessor::hasEditor() const
-{
-    return true; // (change this to false if you choose to not supply an editor)
-}
-
 juce::AudioProcessorEditor* InterDelayAudioProcessor::createEditor()
 {
     return new InterDelayAudioProcessorEditor (*this);
